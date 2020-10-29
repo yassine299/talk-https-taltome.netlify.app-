@@ -29,7 +29,6 @@ voice.addEventListener("click", () => {
 //function to back voice outloud //
 function readOutLoud(message) {
   const speech = new SpeechSynthesisUtterance();
-  speech.text = "i dont know what you saying";
 
   if (message.includes("how are you") || message.includes("hi")) {
     const finalText = greeting[Math.floor(Math.random() * greeting.length)];
